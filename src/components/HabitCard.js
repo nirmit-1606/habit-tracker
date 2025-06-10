@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/HabitCard.css'
 
 const HabitCard = ({ habit }) => {
   return (
