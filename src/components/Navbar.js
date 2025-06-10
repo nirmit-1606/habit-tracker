@@ -1,8 +1,9 @@
 import React from 'react';
-import './styles/Navbar.css'
+import './styles/Navbar.css';
 import { Link } from 'react-router-dom';
+import { Sun, Moon } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = ({ onToggleTheme, isLightMode }) => {
   return (
     <nav className="navbar">
       <div className="logo">Habit Tracker</div>
@@ -14,6 +15,9 @@ const Navbar = () => {
       </div>
 
       <div className="cta">
+        <button className="theme-toggle" onClick={onToggleTheme} aria-label="Toggle Theme">
+          {isLightMode ? <Moon size={24} /> : <Sun size={24} />}
+        </button>
         <Link to="/login"><button className="primary">Login</button></Link>
         <Link to="/signup"><button className="secondary">Get Started</button></Link>
       </div>

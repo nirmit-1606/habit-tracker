@@ -5,12 +5,44 @@
   --accent: #FCA311;
 }
 
+body.light {
+  --bg-primary: #fff;
+  --bg-secondary: #e5e5e5;
+  --text-primary: #000;
+  --accent: #1f5faa;
+}
+
 body {
   margin: 0;
   font-family: "Jaldi", sans-serif;
   background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .navbar .links,
+  .navbar .cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navbar .logo {
+    font-size: 28px;
+  }
+
+  .navbar .links a {
+    font-size: 18px;
+  }
 }

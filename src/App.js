@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './styles/app.css';
 import './styles/pages.css';
@@ -12,9 +12,25 @@ import Navbar from './components/Navbar';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  useEffect(() => {
+    const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialMode = localStorage.getItem('theme') || (userPrefersDark ? 'dark' : 'light');
+    document.body.classList.toggle('light', initialMode === 'light');
+    setIsLightMode(initialMode === 'light');
+  }, []);
+
+  const toggleTheme = () => {
+    const nextMode = isLightMode ? 'dark' : 'light';
+    document.body.classList.toggle('light', nextMode === 'light');
+    localStorage.setItem('theme', nextMode);
+    setIsLightMode(nextMode === 'light');
+  };
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar onToggleTheme={toggleTheme} isLightMode={isLightMode} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
