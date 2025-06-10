@@ -1,0 +1,39 @@
+.auth-container,
+.add-habit,
+.settings,
+.dashboard {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.auth-container h2,
+.add-habit h2,
+.settings h2,
+.dashboard h2 {
+  color: #007bff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.auth-container form,
+.add-habit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container input,
+.add-habit input,
+.settings input,
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

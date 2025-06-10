@@ -1,7 +1,14 @@
+:root {
+  --bg-primary: #000;
+  --bg-secondary: #14213D;
+  --text-primary: #FFF;
+  --accent: #FCA311;
+}
+
 body {
   margin: 0;
   font-family: "Jaldi", sans-serif;
-  background: var(--bg-primary, #000);
+  background: var(--bg-primary);
 }
 
 * {

@@ -5,48 +5,8 @@
   padding-top: 1em;
 }
 
-.navbar+div {
+.navbar + div {
   padding: 0 20px;
-}
-
-.auth-container,
-.add-habit,
-.settings,
-.dashboard {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-}
-
-.auth-container h2,
-.add-habit h2,
-.settings h2,
-.dashboard h2 {
-  color: #007bff;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-.auth-container form,
-.add-habit form {
-  display: flex;
-  flex-direction: column;
-}
-
-.auth-container input,
-.add-habit input,
-.settings input,
-select {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
 button {
@@ -55,22 +15,19 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  border: 1px solid var(--accent, #FCA311);
+  border: 1px solid var(--accent);
   font-family: inherit;
   font-size: inherit;
   font-weight: 400;
+  cursor: pointer;
 }
 
-.primary {
-  background: var(--accent, #FCA311);
-  color: var(--bg-secondary, #14213D);
+button.primary {
+  background: var(--accent);
+  color: var(--bg-secondary);
 }
 
 button.secondary {
   background: none;
-  color: var(--text-primary, #FFF);
+  color: var(--text-primary);
 }
-
-/* button:hover {
-  background-color: #0056b3;
-} */

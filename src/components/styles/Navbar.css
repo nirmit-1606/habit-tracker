@@ -5,11 +5,12 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 45px;
-  background: var(--bg-secondary, #14213D);
+  background: var(--bg-secondary);
+  margin: 0 auto 20px;
 }
 
 .navbar .logo {
-  color: var(--accent, #FCA311);
+  color: var(--accent);
   text-align: center;
   font-family: "Italianno", cursive;
   font-size: 32px;
@@ -29,21 +30,17 @@
 
 .navbar .links a {
   transition: color 0.3s ease;
-  color: var(--text-primary, #FFF);
+  color: var(--text-primary);
   text-align: center;
   font-size: 20px;
 }
 
 .navbar .links a:hover {
-  color: var(--accent, #FCA311);
+  color: var(--accent);
 }
 
 .navbar .cta {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.navbar .cta a {
-  color: inherit;
 }

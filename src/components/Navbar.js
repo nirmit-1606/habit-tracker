@@ -14,8 +14,8 @@ const Navbar = () => {
       </div>
 
       <div className="cta">
-        <button className="primary"><Link to="/login">Login</Link></button>
-        <button className="secondary"><Link to="/signup">Get Started</Link></button>
+        <Link to="/login"><button className="primary">Login</button></Link>
+        <Link to="/signup"><button className="secondary">Get Started</button></Link>
       </div>
     </nav>
   );
