@@ -5,10 +5,18 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
-      <Link to="/dashboard">Dashboard</Link>
-      <Link to="/add">Add Habit</Link>
-      <Link to="/login">Login</Link>
+      <div className="logo">Habit Tracker</div>
+
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/add">Add Habit</Link>
+      </div>
+
+      <div className="cta">
+        <button className="primary"><Link to="/login">Login</Link></button>
+        <button className="secondary"><Link to="/signup">Get Started</Link></button>
+      </div>
     </nav>
   );
 };
