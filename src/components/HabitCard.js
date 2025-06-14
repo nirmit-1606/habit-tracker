@@ -1,12 +1,24 @@
 import React from 'react';
-import './styles/HabitCard.css'
+import './styles/HabitCard.css';
+import { Flame } from 'lucide-react';
 
 const HabitCard = ({ habit }) => {
   return (
     <div className="habit-card">
-      <h3>{habit.name}</h3>
-      <p>Frequency: {habit.frequency}</p>
-      <button>Mark as Done</button>
+      <div className="habit-card-content">
+        <div className="habit-card-header">
+          <h3>{habit.name}</h3>
+          <div className="habit-streak">
+            <Flame size={32} color="var(--accent)" />
+            <span>{habit.streak}</span>
+          </div>
+        </div>
+
+        <span className="habit-frequency">{habit.frequency}</span>
+        <div className="habit-goal">{habit.goal}</div>
+
+        <button className="secondary">Mark as Done</button>
+      </div>
     </div>
   );
 };

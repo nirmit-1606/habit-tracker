@@ -1,6 +1,57 @@
 .habit-card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #fff;
+  background-color: aquamarine;
+  border-radius: 16px;
+  padding-top: 16px;
+  margin: 20px 0;
+  max-width: 320px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.habit-card:hover {
+  padding-top: 24px;
+}
+
+.habit-card-content {
+  background-color: var(--bg-secondary);
+  padding: 20px;
+}
+
+.habit-card:hover .habit-card-content {
+  border-radius: 16px 16px 0 0;;
+}
+
+.habit-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habit-card-header h3 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.habit-streak {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.habit-frequency {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.habit-goal {
+  margin-bottom: 12px;
 }
