@@ -10,21 +10,26 @@
 }
 
 button {
-  display: flex;
-  padding: 4px 16px;
+  display: inline-flex;
+  padding: 6px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 999px;
   border: 1px solid var(--accent);
   font-family: inherit;
-  font-size: inherit;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 button.primary {
   background: var(--accent);
   color: var(--bg-secondary);
+}
+
+button.primary:hover {
+  opacity: 0.9;
 }
 
 button.secondary {

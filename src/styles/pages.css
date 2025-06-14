@@ -2,38 +2,45 @@
 .add-habit,
 .settings,
 .dashboard {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  color: var(--text-primary);
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .auth-container h2,
 .add-habit h2,
 .settings h2,
 .dashboard h2 {
-  color: #007bff;
+  color: var(--accent);
   margin-bottom: 16px;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .auth-container form,
 .add-habit form {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .auth-container input,
 .add-habit input,
 .settings input,
 select {
-  display: block;
   width: 100%;
-  padding: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.auth-container input:focus,
+.add-habit input:focus,
+.settings input:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
 }
