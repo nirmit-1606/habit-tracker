@@ -15,7 +15,7 @@ const HabitCard = ({ habit }) => {
         </div>
 
         <span className="habit-frequency">{habit.frequency}</span>
-        <div className="habit-goal">{habit.goal}</div>
+        <div className="habit-description">{habit.description}</div>
 
         <button className="secondary">Mark as Done</button>
       </div>
