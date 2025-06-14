@@ -1,13 +1,13 @@
 .habit-card {
   background-color: aquamarine;
   border-radius: 16px;
-  padding-top: 16px;
+  padding-top: 12px;
   margin: 20px 0;
-  max-width: 320px;
-  position: relative;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
+  transition: padding 0.4s ease;
 }
 
 .habit-card:hover {
@@ -16,17 +16,23 @@
 
 .habit-card-content {
   background-color: var(--bg-secondary);
-  padding: 20px;
+  padding: 12px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: border-radius 0.4s ease, box-shadow 0.2s ease;
 }
 
 .habit-card:hover .habit-card-content {
-  border-radius: 16px 16px 0 0;;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .habit-card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .habit-card-header h3 {
@@ -46,12 +52,15 @@
   display: inline-block;
   background-color: green;
   color: white;
-  padding: 4px 12px;
+  padding: 2px 12px;
   border-radius: 999px;
-  font-size: 14px;
-  margin: 12px 0;
+  align-self: flex-start;
 }
 
 .habit-goal {
-  margin-bottom: 12px;
+  flex-grow: 1;
+  overflow: auto;
+  margin: 12px 0;
+  line-height: 1.5;
+  word-wrap: break-word;
 }
