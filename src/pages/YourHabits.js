@@ -7,11 +7,13 @@ const YourHabits = () => {
       name: 'Reading',
       frequency: 'Daily',
       description: 'Read 20 pages from a paperback book',
+      cardColor: 'bg-cyan-300',
     },
     {
       name: 'Workout',
       frequency: 'Weekly',
       description: '3 gym sessions per week',
+      cardColor: 'bg-yellow-400',
     },
   ];
 
