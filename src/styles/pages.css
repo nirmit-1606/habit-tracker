@@ -1,7 +1,6 @@
 .auth-container,
 .add-habit,
-.settings,
-.dashboard {
+.settings {
   color: var(--text-primary);
   margin: 0 auto;
   max-width: 1000px;
@@ -9,8 +8,7 @@
 
 .auth-container h2,
 .add-habit h2,
-.settings h2,
-.dashboard h2 {
+.settings h2 {
   color: var(--accent);
   margin-bottom: 16px;
   text-align: center;
