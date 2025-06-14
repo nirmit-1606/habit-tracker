@@ -11,6 +11,7 @@ const Navbar = ({ onToggleTheme, isLightMode }) => {
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/dashboard">Dashboard</Link>
+        <Link to="/your-habits">Your Habits</Link>
         <Link to="/add">Add Habit</Link>
       </div>
 

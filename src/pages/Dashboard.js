@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard max-w-4xl mx-auto p-6">
       <h2 className="text-2xl font-bold text-center text-[var(--accent)] mb-6">
-        Your Habits
+        Track your habits
       </h2>
       <div className="grid auto-rows-auto gap-6 justify-center grid-cols-[repeat(auto-fill,_250px)]">
         <HabitCard habit={{ name: 'Exercise', frequency: 'Daily', goal: 'Read 20 pages', streak: 10 }} />
