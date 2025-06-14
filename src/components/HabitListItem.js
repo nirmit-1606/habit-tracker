@@ -2,8 +2,8 @@ import React from 'react';
 
 const HabitListItem = ({ habit }) => {
     return (
-        <div className="bg-cyan-300 overflow-hidden rounded-xl pl-2 hover:pl-4 transition-all duration-[400ms]">
-            <div className="flex bg-[var(--bg-secondary)] hover:rounded-l-xl transition-all duration-[400ms]">
+        <div className="bg-cyan-300 overflow-hidden rounded-2xl pl-3 hover:pl-4 transition-all duration-[400ms]">
+            <div className="flex bg-[var(--bg-secondary)] hover:rounded-l-xl transition-all duration-[400ms] hover:shadow-[-2px_0_8px_rgba(0,0,0,0.25)]">
                 {/* Content */}
                 <div className="flex-1 px-4 py-2 flex flex-col justify-between gap-2">
                     <div className="flex gap-4 items-start">
