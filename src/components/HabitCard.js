@@ -4,7 +4,7 @@ import { Flame } from 'lucide-react';
 
 const HabitCard = ({ habit }) => {
   return (
-    <div className="habit-card">
+    <div className={`habit-card ${habit.cardColor || 'bg-cyan-300'}`}>
       <div className="habit-card-content">
         <div className="habit-card-header">
           <h3>{habit.name}</h3>
