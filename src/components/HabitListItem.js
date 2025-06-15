@@ -2,7 +2,7 @@ import React from 'react';
 
 const HabitListItem = ({ habit }) => {
     return (
-        <div className={`${habit.cardColor || 'bg-cyan-300'} overflow-hidden rounded-2xl pl-3 hover:pl-4 transition-all duration-[400ms]`}>
+        <div className={`${habit.cardColor || 'bg-cyan-300'} overflow-hidden rounded-2xl pl-3 hover:pl-4 transition-all duration-[400ms] shadow-[0_4px_8px_rgba(0,0,0,0.25)]`}>
             <div className="flex bg-[var(--bg-secondary)] hover:rounded-l-xl transition-all duration-[400ms] hover:shadow-[-2px_0_8px_rgba(0,0,0,0.25)]">
                 {/* Content */}
                 <div className="flex-1 px-4 py-2 flex flex-col justify-between gap-2">
