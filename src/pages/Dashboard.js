@@ -62,7 +62,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="mt-16 min-h-screen max-w-4xl mx-auto p-6">
       <h2 className="text-2xl font-bold text-center text-[var(--accent)] mb-6">
         Track your habits
       </h2>

@@ -5,7 +5,7 @@ import { Sun, Moon } from 'lucide-react';
 
 const Navbar = ({ onToggleTheme, isLightMode }) => {
   return (
-    <nav className="navbar">
+    <nav className="navbar fixed top-0 left-0 right-0 z-50 bg-[var(--bg-secondary)]">
       <div className="logo">Habit Tracker</div>
 
       <div className="links">
