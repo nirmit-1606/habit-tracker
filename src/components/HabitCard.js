@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/HabitCard.css';
 import { Flame } from 'lucide-react';
+import FrequencyChip from './FrequencyChip';
 
 const HabitCard = ({ habit }) => {
   return (
@@ -14,7 +15,7 @@ const HabitCard = ({ habit }) => {
           </div>
         </div>
 
-        <span className="habit-frequency">{habit.frequency}</span>
+        <FrequencyChip frequency={habit.frequency} />
         <div className="habit-description">{habit.description}</div>
 
         <button className="secondary">Mark as Done</button>
